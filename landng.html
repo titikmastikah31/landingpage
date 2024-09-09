@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>landingpage</title>
+        <link rel="icon" href="image/logo.png">
+        <link rel="stylesheet" href="style css.css">
+    </head>
+    <body>
+        <header>
+            <style>
+                * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 5px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header.logo h1 {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    color: chocolate;
+}
+
+#hero {
+    background: url('image/1.jpg') no-repeat center center/cover;
+    color: #fff;
+    height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 60px;
+    background-image: url(img/sepatu\ 4.avif);
+}
+
+#hero .jumbotron {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#hero h2 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta:hover {
+    background: #555;
+    color: chocolate;
+}
+
+section {
+    padding: 60px 0;
+}
+
+#about {
+    background: #f9f9f9;
+    text-align: center;
+}
+
+#features {
+    background: #e9ecef;
+    text-align: center;
+}
+
+#features .features-row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.feature {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.feature i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.feature:hover {
+    background: #ddd;
+    color: #000;
+}
+
+#products {
+    background: #f4f4f4;
+    text-align: center;
+}
+
+.product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+#contact {
+    background: #e9ecef;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.addres-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addres {
+    flex: 1;
+    padding: 20px;
+}
+
+.map {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social li {
+    margin: 0 10px;
+}
+
+footer .social li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #features .features-row {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .addres-map {
+        flex-direction: column;
+    }
+}
+
+.product-card {
+    display: inline-block;
+    width: 30%;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    margin: 10px 0;
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+}
+
+#contact {
+    background: #e9ecef;
+    text-align: center;
+    padding: 40px 0;
+    animation: linear animate-in-and-out;
+	animation-timeline: view();
+}
+
+.addres-map {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.addres {
+    flex: 1;
+    padding: 20px;
+}
+
+.map {
+    flex: 1;
+    padding: 20px;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+footer .social li {
+    margin: 0 10px;
+}
+
+footer .social li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    #hero h2 {
+        font-size: 2.5rem;
+    }
+
+    #features .features-row {
+        flex-direction: column;
+    }
+
+    .product-card {
+        width: 80%;
+    }
+
+    .addres-map {
+        flex-direction: column;
+    }
+}
+
+            </style>
+            <div class="container">
+                <div class="logo">
+                    <img src="img/C-10241__19959.jpg" width="35px" height="35px">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Tentang Kami</a></li>
+                        <li><a href="#">Fitur</a></li>
+                        <li><a href="#">Produk</a></li>
+                        <li><a href="#">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+        <section id="hero">
+            <div class="jumbotron">
+                <h2>Selamat Datang di penjualan sepatu</h2>
+                <p>Dapatkan produk terbaik dengan harga terjangkau</p>
+                <a href="#features" class="cta">Lihat Produk</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>Tentang Kami</h2>
+                <p>Kami adalah toko sepatu online terpercaya yang menyediakan berbagai produk berkualitas.</p>
+            </div>
+        </section>
+
+        <section id="features">
+            <div class="container>">
+                <h2>Fitur Kami</h2>
+                <div class="features-row">
+                    <div class="feature">
+                        <h3>Produk Berkualitas</h3>
+                        <p>Kami hanya menjual produk-produk terbaik untuk Anda.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Pengeriman Cepat</h3>
+                        <p>Pengiriman ceapat dan aman ke seluruh Indonesia.</p>
+                    </div>
+                    <div class="feature">
+                        <h3>Harga Terjangkau</h3>
+                        <p>Harga yang kompetitif untuk setiap produk yang kami tawarkan</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="products">
+            <div class="container">
+                <h2>Produk Kami</h2>
+            </div>
+            <div class="product-card">
+                <img src="img/sepatu 1.jfif">
+                <h3>Sepatu samba bali berkualitas</h3>
+                <p>Rp 385.000</p>
+                <a href="https://wa.me/62895341321866" class="cta">Beli Sekarang</a>
+            </div>
+            <div class="product-card">
+                <img src="img/sepatu 2.jpg">
+                <h3>Sepatu samba x amerika</h3>
+                <p>Rp 840.000</p>
+                <a href="https://wa.me/62895341321866" class="cta">Beli Sekarang</a>
+            </div>
+            <div class="product-card">
+                <img src="img/sepatu 3.jfif">
+                <h3>Sepatu samba model yoau  </h3>
+                <p>Rp 510.000</p>
+                <a href="https://wa.me/62895341321866" class="cta">Beli Sekarang</a>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Alamat Kami</h2>
+                <div class="address-map">
+                    <div class="address">
+                        <p>Jl. Contoh No. 123</p>
+                        <p>Bogor, Indonesia</p>
+                        <p>0895341321866</p>
+                        <p>fadlyramadhan9999@gmail.com</p>
+                    </div>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d990.8628177282836!2d106.7856119!3d-6.5906963!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c562df7e79d9%3A0x5e5bc2d049578f4e!2sSTIKOM%20EL%20RAHMA!5e0!3m2!1sid!2sid!4v1722421545829!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 FootLose. All Rights Reserved</p>
+                <ul class="social">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">X</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+        </footer>
+        <script>setTimeout(function () {
+            alert("Selamat datang di FootLose");
+           }, 3000);
+           
+           const heroText = document.querySelector("#hero h2");
+           const colors = ["#FFF5733", "#33FF57", "#3357FF"];
+           let colorIndex = 0;
+           
+           function changeHeroTextColor() {
+            heroText.style.color = colors[colorIndex];
+            colorIndex = (colorIndex + 1) % colors.length;
+           }
+           
+           setInterval(changeHeroTextColor, 2000);
+           
+           let currentImageIndex = 0;
+           const images = ["image/1.jpg", "image/2.jpg", "image/3.jpg"];
+           
+           function changeHeroImage() {
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+            document.querySelector(
+               "#hero"
+            ).style.backgroundImage = url('${images[currentImageIndex]}');
+           }
+           
+           setInterval(changeHeroImage, 2000);
+           
+           const productImages = document.querySelectorAll(".product-card img");
+           
+           productImages.forEach((image) => {
+            image.addEventListener("click", () => {
+               image.style.transform = "scale(1.5)";
+               image.style.transition = "transform 0.5s";
+            });
+            image.addEventListener("mouseleave", () => {
+               image.style.transform = "scale(1)";
+            });
+           });
+           
+           document.querySelectorAll(".cta").forEach(function (button) {
+            button.addEventListener("click", function (event) {
+               event.preventDefault();
+               alert("Terima kasih telah membeli produk kami");
+            });
+           });
+           
+           const scrollToTopBtn = document.createElement("button");
+           scrollToTopBtn.textContent = "🔝";
+           scrollToTopBtn.id = "scrollToTopBtn";
+           document.body.appendChild(scrollToTopBtn);
+           
+           window.addEventListener("scroll", () => {
+               if (window.scrollY > 100) {
+                   scrollToTopBtn.style.display = "block";
+               } else {
+                   scrollToTopBtn.style.display = "none";
+               }
+           });
+           
+           scrollToTopBtn.addEventListener("click", () => {
+               window.scrollTo({
+                   top: 0,
+                   behavior: "smooth",
+               });
+           });
+        </script>
+    </body>
+</html>
